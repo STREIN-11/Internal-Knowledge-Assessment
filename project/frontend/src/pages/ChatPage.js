@@ -215,7 +215,7 @@ export default function ChatPage() {
               <div style={styles.aiLabel}>🤖 Assistant</div>
               <div style={styles.thinking}>
                 <span style={styles.thinkingText}>Thinking</span>
-                <div style={styles.dots}><span /><span /><span /></div>
+                <div className="dots" style={styles.dots}><span /><span /><span /></div>
               </div>
             </div>
           )}
