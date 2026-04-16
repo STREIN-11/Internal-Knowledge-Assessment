@@ -1,0 +1,66 @@
+CURRICULUM VITAE
+
+Name: Michael Chen
+Email: michael.chen@email.com
+Phone: +1-555-0202
+Location: New York, NY
+LinkedIn: linkedin.com/in/michaelchen
+
+PROFESSIONAL SUMMARY
+Data Scientist with 5 years of experience in machine learning, NLP, and AI/RAG systems. Skilled in building end-to-end ML pipelines, deploying models to production, and translating business problems into data-driven solutions. Strong background in Python, PyTorch, and cloud-based ML platforms.
+
+WORK EXPERIENCE
+
+Senior Data Scientist | DataDriven Corp | 2021 – Present
+- Designed and deployed a Retrieval-Augmented Generation (RAG) system for internal knowledge management, reducing support ticket resolution time by 35%
+- Built NLP pipelines for document classification and entity extraction using BERT and spaCy
+- Developed recommendation engine using collaborative filtering, increasing user engagement by 22%
+- Led A/B testing framework for ML model evaluation
+
+Data Scientist | Analytics Hub | 2019 – 2021
+- Created predictive churn models using XGBoost and Random Forest with 89% accuracy
+- Built automated data pipelines using Apache Airflow and AWS Glue
+- Developed dashboards in Tableau and Power BI for executive reporting
+- Collaborated with engineering teams to productionize ML models via REST APIs
+
+EDUCATION
+M.Sc. Data Science | Columbia University | 2019
+B.Sc. Mathematics | NYU | 2017
+
+TECHNICAL SKILLS
+Languages: Python, R, SQL, Scala
+ML/AI: PyTorch, TensorFlow, scikit-learn, Hugging Face, LangChain
+NLP: BERT, GPT, sentence-transformers, spaCy, NLTK
+Vector DBs: ChromaDB, Pinecone, Weaviate, FAISS
+Cloud: AWS (SageMaker, S3, Lambda), Azure ML
+Data: Pandas, NumPy, Spark, Airflow
+Visualization: Matplotlib, Seaborn, Tableau
+
+CERTIFICATIONS
+- AWS Certified Machine Learning – Specialty (2023)
+- Deep Learning Specialization – Coursera/deeplearning.ai (2020)
+
+PROJECTS
+RAG-based Document Q&A System
+- Built a production RAG system using ChromaDB + sentence-transformers + OpenAI GPT
+- Ingested 10,000+ internal documents with chunking, embedding, and semantic retrieval
+
+Sentiment Analysis API
+- Deployed fine-tuned BERT model as a REST API on AWS Lambda with 99.9% uptime
+
+COMPANY INFORMATION
+DataDriven Corp is a leading AI analytics company founded in 2015, headquartered in New York. The company specializes in enterprise AI solutions, serving Fortune 500 clients across finance, healthcare, and retail sectors. The company has 450 employees and raised $120M in Series C funding in 2022.
+
+INTERVIEW ROUNDS
+1. Initial HR call (culture fit, compensation discussion)
+2. Technical assessment (take-home ML/coding challenge, 48 hours)
+3. Technical interview with Data Science team (model design, statistics, coding)
+4. System design interview (ML system architecture)
+5. Behavioral interview with hiring manager
+6. Final offer and negotiation
+
+DATA RETENTION POLICY
+Candidate CVs and application data are stored in encrypted form in our secure HR system. Data is retained for 24 months. Candidates can request access to or deletion of their personal data under GDPR/CCPA regulations by emailing privacy@datadrivencorp.com.
+
+REFERENCES
+Available upon request.

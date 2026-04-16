@@ -1,0 +1,63 @@
+CURRICULUM VITAE
+
+Name: James Okafor
+Email: james.okafor@email.com
+Phone: +1-555-0404
+Location: Austin, TX
+LinkedIn: linkedin.com/in/jamesokafor
+
+PROFESSIONAL SUMMARY
+Strategic Product Manager with 8 years of experience driving product vision, roadmap, and execution for B2B SaaS products. Proven track record of launching products that achieve product-market fit, growing ARR, and building high-performing cross-functional teams. Strong technical background enabling effective collaboration with engineering teams.
+
+WORK EXPERIENCE
+
+Senior Product Manager | SaaSify Inc. | 2020 – Present
+- Owned the core product roadmap for an AI-powered analytics platform with $15M ARR
+- Launched 3 major product features that contributed to 40% YoY revenue growth
+- Defined and tracked OKRs, KPIs, and product metrics using Mixpanel and Amplitude
+- Conducted 200+ customer interviews to identify pain points and validate product hypotheses
+- Collaborated with engineering, design, and sales to deliver quarterly product releases
+
+Product Manager | Enterprise Tools Co. | 2016 – 2020
+- Managed end-to-end product lifecycle for a workflow automation tool used by 500+ enterprise clients
+- Reduced customer churn by 18% by identifying and addressing key friction points in onboarding
+- Worked with data science team to integrate ML-based recommendations into the product
+- Wrote detailed PRDs, user stories, and acceptance criteria for engineering teams
+
+EDUCATION
+MBA | University of Texas at Austin | 2016
+B.Sc. Information Systems | Howard University | 2014
+
+SKILLS
+Product: Roadmapping, PRD writing, User research, A/B testing, Agile/Scrum, OKRs
+Analytics: Mixpanel, Amplitude, Google Analytics, SQL, Tableau
+Tools: Jira, Confluence, Figma, Notion, Productboard, Miro
+Technical: Basic Python, REST APIs, SQL, understanding of ML/AI systems
+
+CERTIFICATIONS
+- Certified Scrum Product Owner (CSPO) – Scrum Alliance (2019)
+- Product Management Certificate – Pragmatic Institute (2018)
+
+PROJECTS
+AI Feature Launch – Smart Insights
+- Led cross-functional team to launch AI-powered insights feature, resulting in 25% increase in DAU
+
+Customer Feedback System
+- Designed and implemented a systematic customer feedback loop reducing feature request backlog by 60%
+
+COMPANY INFORMATION
+SaaSify Inc. is a fast-growing B2B SaaS company founded in 2016, headquartered in Austin, TX. The company provides AI-powered business analytics solutions to mid-market and enterprise customers. SaaSify has 200 employees and achieved $15M ARR in 2023, with Series B funding of $45M raised in 2022. The company culture emphasizes customer obsession, data-driven decisions, and continuous learning.
+
+INTERVIEW ROUNDS AT SAASIFY
+1. Recruiter call – background, motivation, compensation expectations (30 min)
+2. Hiring Manager interview – product sense, past experience (60 min)
+3. Product case study – take-home assignment, present to panel (48 hours + 45 min presentation)
+4. Cross-functional interviews – with Engineering Lead, Design Lead, and Sales (3 x 45 min)
+5. Executive interview – with VP Product or CEO (30 min)
+6. Reference checks and offer
+
+DATA STORAGE AND MANAGEMENT
+SaaSify stores candidate data in Greenhouse ATS, encrypted at rest and in transit. Data is retained for 18 months post-application. Candidates may request data access or deletion by emailing privacy@saasify.com. SaaSify complies with CCPA and applicable data protection regulations.
+
+REFERENCES
+Available upon request.

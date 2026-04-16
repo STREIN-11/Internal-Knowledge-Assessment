@@ -1,0 +1,67 @@
+CURRICULUM VITAE
+
+Name: Priya Patel
+Email: priya.patel@email.com
+Phone: +44-7700-900303
+Location: London, UK
+LinkedIn: linkedin.com/in/priyapatel
+
+PROFESSIONAL SUMMARY
+DevOps / Cloud Infrastructure Engineer with 6 years of experience designing, automating, and maintaining cloud-native infrastructure. Expert in AWS, Kubernetes, Terraform, and CI/CD pipelines. Passionate about reliability engineering, security, and developer productivity.
+
+WORK EXPERIENCE
+
+Lead DevOps Engineer | CloudNative Ltd | 2021 – Present
+- Architected multi-region AWS infrastructure serving 5M+ daily active users with 99.99% uptime
+- Migrated monolithic application to Kubernetes (EKS), reducing deployment time from 2 hours to 8 minutes
+- Implemented GitOps workflow using ArgoCD and Flux, enabling 50+ deployments per day
+- Built comprehensive observability stack: Prometheus, Grafana, ELK, PagerDuty
+- Reduced AWS costs by 30% through right-sizing, Reserved Instances, and Spot Fleet usage
+
+DevOps Engineer | FinTech Solutions | 2018 – 2021
+- Managed CI/CD pipelines for 20+ microservices using Jenkins and GitHub Actions
+- Implemented infrastructure-as-code using Terraform and Ansible
+- Set up security scanning (SAST/DAST) in CI pipelines using SonarQube and OWASP ZAP
+- Achieved SOC2 Type II compliance by implementing audit logging and access controls
+
+EDUCATION
+B.Eng. Computer Engineering | Imperial College London | 2018
+
+TECHNICAL SKILLS
+Cloud: AWS (EKS, ECS, EC2, RDS, S3, CloudFront, Route53, IAM), GCP, Azure
+Containers: Docker, Kubernetes, Helm, ArgoCD
+IaC: Terraform, Ansible, CloudFormation, Pulumi
+CI/CD: GitHub Actions, Jenkins, GitLab CI, CircleCI
+Monitoring: Prometheus, Grafana, ELK Stack, Datadog, PagerDuty
+Security: IAM, VPC, WAF, KMS, Vault, SAST/DAST tools
+Languages: Python, Bash, Go, YAML
+
+CERTIFICATIONS
+- AWS Certified DevOps Engineer – Professional (2022)
+- Certified Kubernetes Administrator (CKA) (2021)
+- HashiCorp Certified Terraform Associate (2020)
+
+PROJECTS
+Zero-Downtime Migration
+- Led migration of 15 services from on-premise to AWS EKS with zero downtime using blue-green deployments
+
+Cost Optimization Dashboard
+- Built automated AWS cost reporting tool saving £200K/year in cloud spend
+
+COMPANY INFORMATION
+CloudNative Ltd is a UK-based cloud consulting and product company founded in 2012. The company helps enterprises modernize their infrastructure and adopt cloud-native practices. With 300 employees across London, Berlin, and Singapore, CloudNative serves clients in banking, insurance, and media industries.
+
+INTERVIEW PROCESS
+The interview process consists of:
+1. Recruiter screening call (30 minutes)
+2. Technical phone interview (infrastructure and scripting questions)
+3. Practical exercise (design a CI/CD pipeline or Kubernetes setup, 3-4 hours)
+4. Technical panel interview (3 engineers, system design + troubleshooting scenarios)
+5. Values and culture interview with Engineering Director
+6. Offer and onboarding discussion
+
+DATA MANAGEMENT
+All personal data collected during recruitment is processed in accordance with GDPR. Data is stored in our secure ATS for up to 12 months. You have the right to access, rectify, or erase your data. Contact dpo@cloudnative.co.uk for data requests.
+
+REFERENCES
+Available upon request.

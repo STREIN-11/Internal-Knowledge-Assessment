@@ -1,0 +1,29 @@
+services:
+  backend:
+    build: ./backend
+    container_name: knowledge_backend
+    env_file: .env
+    volumes:
+      - uploads_data:/app/uploads
+      - chroma_data:/app/chroma_db
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  frontend:
+    build: ./frontend
+    container_name: knowledge_frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  uploads_data:
+  chroma_data:

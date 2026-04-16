@@ -1,0 +1,62 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+*.pyc
+
+# ── Environment ───────────────────────────────────────────────────────────────
+.env
+!.env.example
+
+# ── Database ──────────────────────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── ChromaDB ──────────────────────────────────────────────────────────────────
+chroma_db/
+backend/chroma_db/
+
+# ── Uploads ───────────────────────────────────────────────────────────────────
+uploads/
+backend/uploads/
+
+# ── Test artifacts ────────────────────────────────────────────────────────────
+.pytest_cache/
+test.db
+htmlcov/
+.coverage
+coverage.xml
+
+# ── Node / React ──────────────────────────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+frontend/build/
+npm-debug.log*
+yarn-error.log*
+.npm
+
+# ── Docker ────────────────────────────────────────────────────────────────────
+.docker/
+
+# ── IDE / OS ──────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/

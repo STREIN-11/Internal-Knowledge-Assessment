@@ -1,0 +1,92 @@
+CURRICULUM VITAE
+
+Name: Elena Vasquez
+Email: elena.vasquez@email.com
+Phone: +1-555-0505
+Location: Seattle, WA
+LinkedIn: linkedin.com/in/elenavasquez
+
+PROFESSIONAL SUMMARY
+Full-Stack Software Architect with 10+ years of experience designing and building large-scale distributed systems. Deep expertise in cloud architecture (AWS), microservices, AI/ML integration, and engineering leadership. Experienced in leading teams of 15+ engineers and driving technical strategy aligned with business goals.
+
+WORK EXPERIENCE
+
+Principal Software Architect | InnovateTech | 2019 – Present
+- Designed the overall system architecture for a multi-tenant SaaS platform processing 10M+ events/day
+- Led migration from monolith to event-driven microservices using AWS EventBridge, SQS, and Lambda
+- Introduced AI/RAG capabilities into the product, enabling semantic search over 50M+ documents
+- Established engineering standards, design review processes, and architectural decision records (ADRs)
+- Grew and mentored engineering team from 8 to 25 engineers across 3 squads
+
+Senior Software Engineer | BigTech Corp | 2014 – 2019
+- Built high-throughput data ingestion pipeline processing 500K events/second using Kafka and Flink
+- Developed React-based internal tooling platform used by 1,000+ employees
+- Implemented OAuth2/OIDC authentication system supporting SSO for 20+ internal applications
+- Contributed to open-source projects including Apache Kafka and Spring Boot
+
+Software Engineer | WebAgency | 2012 – 2014
+- Developed full-stack web applications using PHP, MySQL, and jQuery
+- Built RESTful APIs for mobile applications (iOS and Android)
+
+EDUCATION
+M.Sc. Software Engineering | University of Washington | 2012
+B.Sc. Computer Science | University of Arizona | 2010
+
+TECHNICAL SKILLS
+Architecture: Microservices, Event-driven, CQRS, DDD, Serverless, API Gateway patterns
+Languages: Python, Java, TypeScript, Go, SQL
+Frontend: React, Next.js, TypeScript, Tailwind CSS
+Backend: FastAPI, Spring Boot, Node.js, GraphQL
+AI/ML: LangChain, ChromaDB, OpenAI API, sentence-transformers, RAG systems
+Cloud: AWS (full stack – 50+ services), GCP, Azure
+Data: PostgreSQL, MongoDB, Redis, Kafka, Elasticsearch, DynamoDB
+DevOps: Kubernetes, Terraform, GitHub Actions, ArgoCD, Datadog
+
+CERTIFICATIONS
+- AWS Certified Solutions Architect – Professional (2023)
+- AWS Certified Machine Learning – Specialty (2022)
+- Google Cloud Professional Cloud Architect (2021)
+
+PROJECTS
+Enterprise RAG Platform
+- Architected and built a production RAG system ingesting 50M+ documents with sub-second retrieval
+- Used ChromaDB for vector storage, sentence-transformers for embeddings, GPT-4 for generation
+- Achieved 95% user satisfaction score in internal knowledge retrieval tasks
+
+Real-time Collaboration Platform
+- Built a Google Docs-like collaboration tool using WebSockets, CRDTs, and AWS AppSync
+
+COMPANY INFORMATION
+InnovateTech is a Seattle-based technology company founded in 2010, specializing in enterprise software and AI solutions. The company serves 300+ enterprise clients globally, with offices in Seattle, London, and Singapore. InnovateTech has 600 employees and achieved $80M ARR in 2023. The company is known for its engineering-first culture, competitive compensation, and investment in employee growth through learning budgets, conference attendance, and internal tech talks.
+
+ROLE DESCRIPTION
+The Principal Architect role involves:
+- Setting technical direction and architecture standards across the engineering organization
+- Partnering with product and business stakeholders to translate requirements into technical solutions
+- Leading complex technical initiatives from design through delivery
+- Mentoring senior engineers and growing technical leadership capability
+- Evaluating and adopting new technologies to maintain competitive advantage
+
+INTERVIEW PROCESS AT INNOVATETECH
+1. Recruiter screening (30 min) – background, role fit, compensation
+2. Hiring Manager intro (45 min) – leadership style, technical background
+3. Architecture design exercise (take-home, 3-5 hours) – design a scalable system
+4. Architecture review panel (90 min) – present and defend design decisions
+5. Technical depth interviews (2 x 60 min) – distributed systems, AI/ML, coding
+6. Leadership and behavioral interview (60 min) – with VP Engineering
+7. Executive interview (30 min) – with CTO
+8. Reference checks, offer, and negotiation
+
+DATA MANAGEMENT AND RETENTION POLICY
+InnovateTech is committed to protecting candidate privacy. All application data is:
+- Stored in encrypted form in our Workday ATS system
+- Retained for 24 months post-application for compliance and future opportunities
+- Accessible to HR and hiring team members only, with role-based access controls
+- Never sold or shared with third-party recruiters without explicit candidate consent
+- Subject to deletion upon written request to privacy@innovatetech.com
+- Compliant with GDPR, CCPA, and Washington State Privacy Act (WSPA)
+
+Candidates have the right to: access their data, correct inaccuracies, request deletion, and opt out of future communications.
+
+REFERENCES
+Available upon request.
