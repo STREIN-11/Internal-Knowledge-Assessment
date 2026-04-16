@@ -213,7 +213,10 @@ export default function ChatPage() {
           {loading && (
             <div style={{ ...styles.bubble, ...styles.aiBubble }}>
               <div style={styles.aiLabel}>🤖 Assistant</div>
-              <div style={styles.typing}><span /><span /><span /></div>
+              <div style={styles.thinking}>
+                <span style={styles.thinkingText}>Thinking</span>
+                <div style={styles.dots}><span /><span /><span /></div>
+              </div>
             </div>
           )}
           <div ref={bottomRef} />
@@ -240,6 +243,10 @@ export default function ChatPage() {
         .typing span { display:inline-block; width:8px; height:8px; margin:0 2px; background:#4f46e5; border-radius:50%; animation:bounce 1.4s infinite ease-in-out; }
         .typing span:nth-child(2){animation-delay:.16s}
         .typing span:nth-child(3){animation-delay:.32s}
+        @keyframes blink { 0%,80%,100%{opacity:0} 40%{opacity:1} }
+        .dots span { display:inline-block; width:5px; height:5px; background:#9ca3af; border-radius:50%; animation:blink 1.4s infinite ease-in-out; }
+        .dots span:nth-child(2){animation-delay:.2s}
+        .dots span:nth-child(3){animation-delay:.4s}
       `}</style>
     </div>
   );
@@ -282,5 +289,8 @@ const styles = {
   inputRow: { display: "flex", gap: 12, padding: "16px 32px", borderTop: "1px solid #e5e7eb", background: "#fff" },
   textarea: { flex: 1, resize: "none", borderRadius: 10, fontSize: 15 },
   sendBtn: { alignSelf: "flex-end", padding: "10px 20px" },
+  thinking: { display: "flex", alignItems: "center", gap: 8 },
+  thinkingText: { fontSize: 14, color: "#6b7280", fontStyle: "italic" },
+  dots: { display: "flex", alignItems: "center", gap: 3 },
   typing: { display: "flex", alignItems: "center", height: 24 },
 };
