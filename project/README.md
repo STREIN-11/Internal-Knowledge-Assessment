@@ -77,14 +77,18 @@ pytest tests/ -v
 │                        Browser                              │
 │              React SPA (port 3000)                          │
 │   Login │ Docs Page │ Chat Page                             │
+│                      (Sessions sidebar,                     │
+│                       Chat + Citations,                     │
+│                       3-dot delete menu)                    │
 └──────────────────┬──────────────────────────────────────────┘
                    │ HTTP (nginx proxy)
 ┌──────────────────▼──────────────────────────────────────────┐
 │                   FastAPI Backend (port 8000)               │
 │                                                             │
-│  /api/auth    → JWT register/login                          │
+│  /api/auth      → JWT register/login                        │
 │  /api/documents → upload, list, delete                      │
-│  /api/chat    → RAG query endpoint                          │
+│  /api/chat      → RAG query endpoint (saves to session)     │
+│  /api/sessions  → list, create, delete sessions             │
 │                                                             │
 │  ┌─────────────┐  ┌──────────────┐  ┌──────────────────┐    │
 │  │  Extractor  │  │  RAG Service │  │   LLM Service    │    │
@@ -92,9 +96,34 @@ pytest tests/ -v
 │  └─────────────┘  └──────────────┘  └──────────────────┘    │
 │                                                             │
 │  ┌─────────────────────────────────────────────────────┐    │
-│  │  SQLite (users + document metadata)                 │    │
+│  │  SQLite (users, documents, chat_sessions,           │    │
+│  │           chat_messages)                            │    │
 │  └─────────────────────────────────────────────────────┘    │
 └─────────────────────────────────────────────────────────────┘
+```
+
+### Chat Session Flow
+
+```
+User clicks "+ New Chat"
+    │
+    ▼
+POST /api/sessions/ → creates ChatSession
+    │
+    ▼
+User types query → POST /api/chat/ (with session_id + history)
+    │
+    ▼
+RAG retrieval → LLM generation → answer + citations
+    │
+    ▼
+Messages saved to session in SQLite
+Session auto-titled from first query
+    │
+    ▼
+On next login → sessions restored from GET /api/sessions/
+Click session → GET /api/sessions/{id}/messages
+3-dot menu → DELETE /api/sessions/{id}
 ```
 
 ### RAG Flow
@@ -109,7 +138,7 @@ Embed query (sentence-transformers: all-MiniLM-L6-v2)
 Vector similarity search → ChromaDB → Top-K chunks
     │
     ▼
-Build prompt: [System] + [Context chunks] + [Query]
+Build prompt: [System] + [last 6 history turns] + [Context chunks] + [Query]
     │
     ▼
 LLM (OpenAI GPT) or Extractive fallback
@@ -162,7 +191,7 @@ project/
 │   ├── app/
 │   │   ├── main.py          # FastAPI app + CORS + routes
 │   │   ├── database.py      # SQLAlchemy engine + session
-│   │   ├── models.py        # User + Document ORM models
+│   │   ├── models.py        # User, Document, ChatSession, ChatMessage ORM models
 │   │   ├── auth.py          # JWT + password utilities
 │   │   ├── extractor.py     # PDF/DOCX/TXT text extraction
 │   │   ├── rag_service.py   # Chunking, embedding, ChromaDB
@@ -170,7 +199,8 @@ project/
 │   │   └── routes/
 │   │       ├── auth.py      # /api/auth endpoints
 │   │       ├── documents.py # /api/documents endpoints
-│   │       └── chat.py      # /api/chat endpoint
+│   │       ├── chat.py      # /api/chat endpoint (saves to session)
+│   │       └── sessions.py  # /api/sessions endpoints
 │   ├── tests/
 │   │   ├── conftest.py      # pytest fixtures
 │   │   └── test_api.py      # auth + docs + chat tests
@@ -185,7 +215,7 @@ project/
 │   │   ├── pages/
 │   │   │   ├── LoginPage.js # Login + Register
 │   │   │   ├── DocsPage.js  # Upload + list documents
-│   │   │   └── ChatPage.js  # Chat + citations
+│   │   │   └── ChatPage.js  # Sessions sidebar, chat, citations, 3-dot delete
 │   │   └── components/
 │   │       └── Navbar.js    # Navigation bar
 │   ├── public/index.html
@@ -210,6 +240,10 @@ project/
 | List documents with metadata | ✅ |
 | Ask questions, get RAG answers | ✅ |
 | Citations/sources shown per answer | ✅ |
+| Persistent chat sessions with sidebar | ✅ |
+| Sessions restored on login | ✅ |
+| Delete session via 3-dot menu | ✅ |
+| Multi-turn conversation history | ✅ |
 | Works without OpenAI key (extractive fallback) | ✅ |
 | README + .env.example | ✅ |
 | At least 3 backend tests | ✅ (7 tests) |
